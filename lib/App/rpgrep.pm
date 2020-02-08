@@ -1,5 +1,7 @@
 ## no critic: InputOutput::RequireBriefOpen
 
+package App::rpgrep;
+
 # AUTHORITY
 # DATE
 # DIST
@@ -24,10 +26,10 @@ gen_modified_sub(
     description => <<'_',
 
 _
-    remove_args => {
+    remove_args => [
         'regexps',
         'pattern',
-    },
+    ],
     add_args    => {
         %App::RegexpPatternUtils::args_common_get_pattern,
         files => {
